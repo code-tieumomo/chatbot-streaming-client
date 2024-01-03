@@ -47,7 +47,7 @@ final class Completions implements CompletionsContract
     {
         $parameters = $this->setStreamParameter($parameters);
 
-        $payload = Payload::create('completions', $parameters);
+        $payload = Payload::create('chat', $parameters);
 
         $response = $this->transporter->requestStream($payload);
 

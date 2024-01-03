@@ -94,7 +94,7 @@ final class Payload
     public static function create(string $resource, array $parameters): self
     {
         $contentType = ContentType::JSON;
-        $method = Method::POST;
+        $method = Method::GET;
         $uri = ResourceUri::create($resource);
 
         return new self($contentType, $method, $uri, $parameters);

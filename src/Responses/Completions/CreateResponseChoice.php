@@ -7,7 +7,7 @@ namespace OpenAI\Responses\Completions;
 final class CreateResponseChoice
 {
     private function __construct(
-        public readonly string $text,
+        public readonly mixed $text,
         public readonly int $index,
         public readonly ?CreateResponseChoiceLogprobs $logprobs,
         public readonly ?string $finishReason,

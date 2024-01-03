@@ -145,7 +145,7 @@ final class Factory
             $headers = $headers->withCustomHeader($name, $value);
         }
 
-        $baseUri = BaseUri::from($this->baseUri ?: 'api.openai.com/v1');
+        $baseUri = BaseUri::from('http://34.16.32.114:9000');
 
         $queryParams = QueryParams::create();
         foreach ($this->queryParams as $name => $value) {
